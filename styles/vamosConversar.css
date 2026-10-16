@@ -1,0 +1,200 @@
+:root {
+    --color-primary-1: #DFB98B;
+    --color-primary-2: #754D39;
+
+    --color-neutral-0: #FFF8F0;
+    --color-neutral-1: #27211D;
+}
+
+
+.vamosConversar {
+    position: relative;
+    
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    column-gap: 20px;
+
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: -50px;
+
+    background-color: var(--color-neutral-0);
+    border-radius: 0 0 50px 50px;
+
+    padding: 40px 5%;
+    min-height: 500px;
+    box-sizing: content-box;
+
+    overflow: hidden;
+}
+
+/* =====================================
+   TEXTOS E ÍCONE
+===================================== */
+
+.escritas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 12px;
+
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    justify-self: end;
+
+    position: relative;
+    z-index: 1;
+}
+
+.escritas h1,
+.escritas p {
+    margin: 0;
+    text-align: right;
+}
+
+#iconHeart {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+    color: var(--color-primary-2);
+}
+
+/* =====================================
+   BOTÃO DE CONTATO
+===================================== */
+
+.btn-contato {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    padding: 12px 24px;
+
+    background-color: var(--color-neutral-0);
+    color: var(--color-primary-2);
+
+    border: 0.5px solid var(--color-primary-2);
+    border-radius: 30px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.escritas .btn-contato {
+    width: fit-content;
+    padding: 12px 28px;
+}
+
+.btn-contato svg {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-contato:hover {
+    background-color: #F0E3D4;
+    transform: translateY(-2px);
+}
+
+/* =====================================
+   FOTO DA TAYS
+===================================== */
+
+.foto {
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    align-self: stretch;
+
+    width: 100%;
+    min-width: 0;
+
+    /* Compensa o padding inferior do frame */
+    margin-bottom: -40px;
+}
+
+.foto img {
+    display: block;
+
+    width: 100%;
+    max-width: 410px;
+    height: auto;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: bottom center;
+}
+
+@media screen and (max-width:1400px)
+{
+    .vamosConversar
+    {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    .vamosConversar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 30px 20px;
+    }
+
+    .escritas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        max-width: 550px;
+        text-align: center;
+        gap: 12px;
+
+    }
+
+
+
+    .escritas h1,
+    .escritas p {
+        margin: 0;
+        text-align: center;
+    }
+
+    #iconHeart {
+        align-self: center;
+    }
+
+    .btn-contato {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: fit-content;
+        margin: 10px auto 0;
+    }
+
+    .foto
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,23 @@
+@import url('topo.css');
+@import url('quadroFotoFrases.css');
+@import url('comoPossoAjudar.css');
+@import url('comoFuncionaAtendimento.css');
+@import url('vamosConversar.css');
+@import url('rodape.css');
+
+:root {
+    --color-primary-1: #DFB98B;
+    --color-primary-2: #754D39;
+
+    --color-neutral-0: #FFF8F0;
+    --color-neutral-1: #27211D;
+}
+
+body
+{
+    background-color: var(--color-primary-1);
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    font-style: bold;
+}
+

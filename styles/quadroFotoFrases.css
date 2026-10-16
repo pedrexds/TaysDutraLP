@@ -1,0 +1,166 @@
+:root {
+    --color-primary-1: #DFB98B;
+    --color-primary-2: #754D39;
+
+    --color-neutral-0: #FFF8F0;
+    --color-neutral-1: #27211D;
+}
+
+.fotoFrases
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.conteudoCentral
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 50px;
+    padding: 15px;
+    z-index: 2;
+}
+
+.conteudoCentral h3
+{
+    font-size: 30px;
+    color: var(--color-neutral-1);
+}
+
+#frases
+{
+    color: var(--color-primary-2);
+    font-weight: bold;
+    font-size: 15pt;
+    z-index: 2;
+}
+
+#fotoCircularTays
+{
+    max-width: 400px;
+    box-shadow: -5px -5px 0px 4px;
+    border-radius: 100%;
+    color: var(--color-primary-2);
+    margin-right: 15px;
+}
+
+#bt1frame
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.decoracao
+{
+    position: absolute;
+    width: 20px;
+}
+
+.decoracao img
+{
+    width: 250px;
+    margin-left: 600px;
+}
+
+.recuo45
+{
+    margin-left: -35px;
+}
+
+.recuo15
+{
+    margin-left: -5px;
+}
+
+.recuo5
+{
+    margin-left: 5px;
+}
+
+.conteudoCentral button
+{
+    border-radius: 15px;
+    font-size: 15pt;
+    padding: 10px;
+    background-color: var(--color-primary-2);
+    color: var(--color-neutral-0);
+    z-index: 2;
+    cursor: pointer;
+    border: none
+}
+
+@media screen and (max-width: 1400px) {
+    #fotoCircularTays
+    {
+        max-width: 350px;
+        margin: none;
+    }
+
+    .conteudoCentral
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 100px;
+        margin-right: 100px;
+        border-radius: 50px;
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+
+    .decoracao img
+    {
+        width: 250px;
+        margin-left: 750px;
+    }
+
+    #svg
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #svg
+    {
+        display: none;
+    }
+
+    #fotoCircularTays
+    {
+        max-width: 150px;
+        margin: none;
+    }
+
+    #frases
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    #frases p
+    {
+        margin-left: 0;
+    }
+
+    .conteudoCentral
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .fotoFrases
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
